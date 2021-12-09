@@ -4,7 +4,12 @@ using UnityEngine;
 
 namespace UISystem
 {
-   
+
+    public enum STACK_OERATION
+    {
+        PUSH,
+        POP
+    }
     public  class UINavigationSystem 
     {
 
@@ -16,7 +21,7 @@ namespace UISystem
         }
         public static void PushNode(GameObject gb)
         {
-            if (uINodeStack.Count > 0)
+            if (uINodeStack.Count != 0)
                 uINodeStack.Peek().SetActive(false);
             uINodeStack.Push(gb);
 
@@ -25,7 +30,7 @@ namespace UISystem
         }
         public static void PopNode()
         {
-            if (uINodeStack.Count == 1) return;
+           // if (uINodeStack.Count == 1) return;
             if (uINodeStack.Count > 0)
             {
                 GameObject topNode = uINodeStack.Peek();

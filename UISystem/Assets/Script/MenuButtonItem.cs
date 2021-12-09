@@ -10,7 +10,7 @@ namespace UISystem
     {
 
         [SerializeField] public GameObject node;
-
+        [SerializeField] protected STACK_OERATION stackOperation=STACK_OERATION.PUSH;
         public delegate void SetCallback();
         public event SetCallback SetOnclickCallBackEvent;
 
@@ -34,8 +34,15 @@ namespace UISystem
 
         public void Panel(bool active)
         {
-            UINavigationSystem.PushNode(node);
-            node.gameObject.SetActive(active);
+            if (stackOperation != STACK_OERATION.POP)
+            {
+                node.gameObject.SetActive(active);
+                UINavigationSystem.PushNode(node);
+            }
+            else
+                UINavigationSystem.PopNode();
+
+           
 
         }
 

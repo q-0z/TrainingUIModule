@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 4284893}
   - component: {fileID: 4284892}
   - component: {fileID: 4284891}
+  - component: {fileID: 4284894}
   m_Layer: 5
   m_Name: NoBtn
   m_TagString: Untagged
@@ -245,6 +246,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4284889}
   m_CullTransparentMesh: 1
+--- !u!114 &4284894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4284889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174597a187e3a9d40874e9c419a8c18c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  node: {fileID: 878311866}
+  stackOperation: 1
 --- !u!1001 &56559692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -776,7 +791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fb11d3b3f269e4081a53d066351042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelMenus: []
 --- !u!1 &223782317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,7 +1153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fb11d3b3f269e4081a53d066351042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelMenus: []
 --- !u!114 &570632123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1323,7 +1336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fb11d3b3f269e4081a53d066351042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelMenus: []
 --- !u!114 &747740859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1862,7 +1874,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fb11d3b3f269e4081a53d066351042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelMenus: []
 --- !u!1001 &894386163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2157,7 +2168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fb11d3b3f269e4081a53d066351042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelMenus: []
 --- !u!114 &928225068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2339,6 +2349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   node: {fileID: 0}
+  stackOperation: 0
 --- !u!114 &1098259916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2951,6 +2962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   node: {fileID: 0}
+  stackOperation: 0
 --- !u!114 &1334739341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3875,7 +3887,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1600009411}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963194225}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1600009411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3968,6 +3992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   node: {fileID: 0}
+  stackOperation: 0
 --- !u!114 &1667159496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4196,7 +4221,7 @@ GameObject:
   - component: {fileID: 1773276810}
   - component: {fileID: 1773276812}
   - component: {fileID: 1773276811}
-  - component: {fileID: 1773276813}
+  - component: {fileID: 1773276814}
   m_Layer: 5
   m_Name: OptionsPanel
   m_TagString: Untagged
@@ -4265,7 +4290,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773276809}
   m_CullTransparentMesh: 1
---- !u!114 &1773276813
+--- !u!114 &1773276814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4274,7 +4299,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1773276809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6fb11d3b3f269e4081a53d066351042, type: 3}
+  m_Script: {fileID: 11500000, guid: f40e53aa29fea434a9c2e8dde053fa11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   panelMenus:
